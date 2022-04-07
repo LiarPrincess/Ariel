@@ -1,0 +1,96 @@
+// cSpell is our spell checker
+// See: https://github.com/streetsidesoftware/cspell/tree/master/packages/cspell
+{
+  // Version of the setting file.  Always 0.1
+  "version": "0.1",
+  // language - current active spelling language
+  "language": "en",
+  // dictionaries - list of the names of the dictionaries to use
+  "dictionaries": [
+    "en_US",
+    "softwareTerms"
+  ],
+  // words - list of words to be always considered correct
+  "words": [
+    // Swift
+    "associatedtype",
+    "deinit",
+    "discardable",
+    "fileprivate",
+    "Hashable",
+    "inout",
+    "nonmutating",
+    "struct",
+    "typealias",
+    // Lib c
+    "blksize",
+    "closedir",
+    "creat",
+    "dirp",
+    "enoent",
+    "errno",
+    "extname",
+    "fdopendir",
+    "fileno",
+    "fstat",
+    "fstat",
+    "ftruncate",
+    "lseek",
+    "malloc",
+    "mkdir",
+    "mkdirp",
+    "mtim",
+    "mtimespec",
+    "opendir",
+    "posix",
+    "readdir",
+    "realloc",
+    "reallocf",
+    "statbuf",
+    "strerror",
+    "strlen",
+    "strrchr",
+    "timespec",
+    "EACCES",
+    "EDQUOT",
+    "EEXIST",
+    "EFBIG",
+    "EINTR",
+    "ENAMETOOLONG",
+    "ENOENT",
+    "ENOSPC",
+    "EPERM",
+    "EROFS",
+    "IFBLK",
+    "IFCHR",
+    "IFDIR",
+    "IFIFO",
+    "IFLNK",
+    "IFMT",
+    "IFREG",
+    "IFSOCK",
+    "IRWXG",
+    "IRWXO",
+    "IRWXU",
+    "RDONLY",
+    "RDWR",
+    "WRONLY",
+    // Other
+    "Disnep",
+    "letitgo",
+    // Tools
+    "swiftlint",
+    "swiftformat"
+  ],
+  // flagWords - list of words to be always considered incorrect
+  "flagWords": [
+    "hte",
+    "Disney" // Incorrect spelling of “Disnep”
+  ],
+  // TODO: Simplify?
+  "ignoreRegExpList": [
+    "[Ss](o)+[… ]", // Sooooo…
+    "[Oo]+ps…", // Ooooops… - means that something went bad
+    "[Ww](a)+y " // Waaaay too much
+  ]
+}

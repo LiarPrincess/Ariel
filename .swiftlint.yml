@@ -18,7 +18,7 @@ file_length:
 # We will list all of the SwiftLint rules deciding on a case-by-case basis
 # whether we want to enable them or not.
 # Otherwise if some contributor has newer version of SwiftLint installed they
-# my be flooded with errors from rules that Violet was not checked against.
+# my be flooded with errors from rules that Ariel was not checked against.
 #
 # When upgrading SwiftLint (and thus adding new rules) use
 # 'Scripts/swiftlint_version_migration' to list all of the rules not mentioned
