@@ -1,4 +1,5 @@
 import SwiftSyntax
+import Core
 
 /// Attribute is the `@` thingy above declaration.
 ///

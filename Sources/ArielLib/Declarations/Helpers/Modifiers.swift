@@ -1,5 +1,6 @@
 import ArgumentParser
 import SwiftSyntax
+import Core
 
 // MARK: - Access modifiers
 

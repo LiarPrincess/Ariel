@@ -1,4 +1,5 @@
 import SwiftSyntax
+import Core
 
 /// Something like `<T: CustomStringConvertible>`.
 public struct GenericParameter {

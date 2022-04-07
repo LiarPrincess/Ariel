@@ -37,7 +37,7 @@ public class Writer {
   }
 
   private func isAnyAccepted(declarations: [Declaration]) -> Bool {
-    return declarations.any
+    return declarations.hasAny
       && declarations.contains(where: self.filter.isAccepted(_:))
   }
 

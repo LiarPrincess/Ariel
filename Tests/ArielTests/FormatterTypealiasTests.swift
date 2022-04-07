@@ -1,5 +1,5 @@
 import XCTest
-@testable import LibAriel
+@testable import ArielLib
 
 class FormatterTypealiasTests: XCTestCase {
 

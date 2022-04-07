@@ -1,6 +1,5 @@
 import Foundation
 import FileSystem
-import VioletCore
 
 public class FileOutput: Output {
 

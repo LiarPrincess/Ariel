@@ -1,4 +1,5 @@
 import SwiftSyntax
+import Core
 
 // swiftlint:disable line_length
 

@@ -1,4 +1,5 @@
 import SwiftSyntax
+import Core
 
 public class Operator: Declaration {
 

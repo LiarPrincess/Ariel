@@ -49,7 +49,7 @@ public struct Formatter {
 
     let visitor = Visitor(formatter: self)
     visitor.visit(node)
-    assert(visitor.result.any)
+    assert(visitor.result.hasAny)
     return visitor.result
   }
 
@@ -260,7 +260,7 @@ public struct Formatter {
     result += " operator "
     result += node.name
 
-    if node.operatorPrecedenceAndTypes.any {
+    if node.operatorPrecedenceAndTypes.hasAny {
       result += ": "
       result += self.join(node.operatorPrecedenceAndTypes, separator: ", ")
     }
@@ -291,7 +291,7 @@ public struct Formatter {
     return result.trimmed
   }
 
-  // MARK: - Helper - Attribues
+  // MARK: - Helper - Attributes
 
   private func formatWithNewLineAfterEach(_ attributes: [Attribute]) -> String {
     if attributes.isEmpty {

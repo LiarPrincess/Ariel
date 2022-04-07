@@ -10,11 +10,6 @@ extension String {
 
     self = String(cString: cStr)
   }
-
-  /// Python calls this 'strip' they are wrong
-  internal var trimmed: String {
-    self.trimmingCharacters(in: .whitespacesAndNewlines)
-  }
 }
 
 extension Collection {

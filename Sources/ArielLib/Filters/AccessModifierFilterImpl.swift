@@ -1,4 +1,5 @@
 import SwiftSyntax
+import Core
 
 private let defaultAccessModifier = AccessModifier.internal
 

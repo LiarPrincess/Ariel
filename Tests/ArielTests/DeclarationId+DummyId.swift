@@ -1,4 +1,4 @@
-import LibAriel
+import ArielLib
 
 extension DeclarationId {
   static var dummyId: DeclarationId {

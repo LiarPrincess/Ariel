@@ -1,4 +1,5 @@
 import SwiftSyntax
+import Core
 
 public struct Accessor {
 
@@ -124,7 +125,7 @@ public struct Accessor {
   // MARK: - Helpers
 
   private static func isSurroundedByBraces(_ children: [Syntax]) -> Bool {
-    assert(children.any)
+    assert(children.hasAny)
     let first = children[0]
     let last = children[children.count - 1]
     return first.isToken(withText: "{") && last.isToken(withText: "}")

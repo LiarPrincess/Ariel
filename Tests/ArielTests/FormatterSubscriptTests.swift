@@ -1,5 +1,5 @@
 import XCTest
-@testable import LibAriel
+@testable import ArielLib
 
 // swiftlint:disable line_length
 // swiftlint:disable function_body_length
