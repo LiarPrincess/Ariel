@@ -16,8 +16,15 @@ let package = Package(
     .package(url: "https://github.com/apple/swift-argument-parser", .upToNextMinor(from: "0.4.0"))
   ],
   targets: [
+    // Shared module that all of the other modules depend on.
+    .target(name: "Core", dependencies: []),
+
+    // Helper module for working with file system (duh…).
+    .target(name: "FileSystem", dependencies: ["Core"]),
+    .testTarget(name: "FileSystemTests", dependencies: ["FileSystem"]),
+
     // We need a separate 'ArielLib' to be able to write unit tests.
-    .target(name: "ArielLib", dependencies: ["SwiftSyntax", "ArgumentParser"]),
+    .target(name: "ArielLib", dependencies: ["SwiftSyntax", "ArgumentParser", "FileSystem"]),
     .target(name: "Ariel", dependencies: ["ArielLib"]),
     .testTarget(name: "ArielTests", dependencies: ["ArielLib"])
   ]
