@@ -12,8 +12,10 @@ all: build
 build:
 	swift build
 
+# If you get compilation errors then check the Xcode version against dependencies
+# in 'Package.swift'.
 run:
-	swift run Ariel
+	./Example\ output/create_files.sh
 
 test:
 	swift test
